@@ -1,0 +1,61 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+
+.audio-player {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 0.5rem;
+
+    box-shadow: 0 1rem 1.5rem #10101024;
+    overflow: hidden;
+}
+
+.audio-player .thumb {
+    width: 10rem;
+    height: 10rem;
+    
+}
+
+.audio-player .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.audio-player .info {
+    padding: 0.5rem;
+}
+
+.audio-player .detail {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    margin-bottom: 1rem;
+}
+
+.audio-player .title {
+    font-size: 1rem;
+    margin-top: 0.1rem;
+}
+
+
+
+.audio-player .control i {
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-content: center;
+    font-size: 0.8rem;
+    background-color: #1AAFFF;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    /* box-shadow: 0 0 0rem #1AAFFFAA; */
+}
+
+.audio-player .control i:hover {
+    /* box-shadow: 0 0 1.5rem #1AAFFFAA; */
+    font-size: 1rem;
+}

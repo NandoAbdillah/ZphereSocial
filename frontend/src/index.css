@@ -1,0 +1,310 @@
+@import url(../public/css/feather.css);
+@import url(../public/css/themify-icons.css);
+
+.pt-plus-10 {
+  padding-top: 10px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.owl-stage {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item {
+  display: inline-block;
+  /* margin-right: 7px; contoh margin, sesuaikan dengan kebutuhan */
+}
+
+/* .menu-icon:hover 
+{
+    color: ;
+} */
+
+.scrollarea {
+  min-height: 500px;
+}
+
+.otp-input {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: 2px solid var(--theme-color) !important;
+  border-radius: 0.25rem;
+}
+
+.otp-input:focus {
+  border-color: #ffff;
+  box-shadow: 0 0 5px var(--theme-color-shade) !important;
+}
+
+
+
+.table-resizable {
+  overflow: auto;
+  resize: horizontal;
+}
+
+.table-resizable th,
+.table-resizable td {
+  white-space: nowrap;
+}
+
+.table-resizable th {
+  cursor: col-resize;
+  position: relative;
+}
+
+.table-resizable th:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: transparent;
+  cursor: col-resize;
+}
+
+
+/* Container Utama */
+.zpherepay-container {
+
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.zpherepay-header {
+
+  /* color: white; */
+  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.zpherepay-header h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: green;
+}
+
+.zpherepay-header p {
+  color: blue;
+}
+
+/* Riwayat Transaksi */
+.transaction-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  padding: 10px 0;
+}
+
+.transaction-item h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+
+
+/* Kartu Saldo */
+.balance-card {
+
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+
+}
+
+/* .balance-card:hover {
+    box-shadow: 0 4px 20px var(--theme-color);
+  } */
+.zpherepay-text {
+  /* color : linear-gradient(145deg, #0056b3, #007bff);
+     */
+  color: green;
+}
+
+.zpherepay-background {
+  background-color: green;
+}
+
+
+
+.balance-card .balance-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  
+}
+
+/* Kartu Aksi */
+.action-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.action-card .btn-action {
+  width: 70px;
+  height: 70px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: white;
+  border: 2px solid green;
+  color: green;
+}
+
+.action-card .btn-action:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.1);
+}
+
+.action-card .btn-action i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+
+
+
+/* Fitur Tambahan */
+.additional-features {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.feature-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.feature-card .btn-block {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.feature-card .btn-block:hover {
+  background-color: #0056b3;
+}
+
+#editorContent p, #editorContent div {
+  page-break-inside: avoid;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .action-card .btn-action {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+
+  .balance-card .balance-amount {
+    font-size: 2rem;
+  }
+
+  .feature-icon {
+    font-size: 40px;
+  }
+}
+
+.list-decimal{
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+/* .pdf-viewer.theater-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.story-page.theater-mode {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; */
+/* } */
+
+
+
+
+.card:hover .hover-buttons {
+  display: flex !important;
+}
+
+.hover-buttons {
+  display: none;
+  gap: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.notification-blue-hover:hover {
+  background-color: #e8f1fa !important
+}
+
+.notification-green-hover:hover {
+  background-color: #f2faf6 !important
+}
